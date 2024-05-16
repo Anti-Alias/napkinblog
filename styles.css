@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: start;
     align-items: center;
     font-family: "Noto Sans", sans-serif;
     margin: 0;
@@ -10,10 +10,21 @@ body {
     min-height: 100vh;
 }
 
+h1 { font-size: 40px; }
+h2 { font-size: 35px; }
+h3 { font-size: 30px; }
+h4 { font-size: 25px; }
+h5 { font-size: 20px; }
+h6 { font-size: 15px; }
+
 a {
     color: #3399FF;
     text-decoration: none;
     font-weight: bold;
+}
+
+iframe {
+    border: none;
 }
 
 .header {
@@ -27,18 +38,20 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 960px;
-    flex-grow: 1;
+    max-width: 960px;
     font-size: 18px;
 }
 
 .content > p {
     margin: 0 0 20px 0;
+    padding: 0 10px 0 10px;
 }
 
 .footer {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: end;
 }
 
 .footer > a {
@@ -51,4 +64,8 @@ a {
 
 .icon {
     margin: 5px;
+}
+
+.game {
+    overflow: none;
 }
